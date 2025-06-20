@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html>
+<!-- Tell the browser this is an HTML5 document -->
+<html lang="en">
 <head>
-  <title>Riyad Patel</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- Metadata about the document -->
+  <meta charset="UTF-8" />
+  <!-- Make the page responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Page title shown in the browser tab -->
+  <title>Chhavi Verg – Portfolio</title>
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to Riyad Patel’s Website</h1>
-  <a href="gallery.html">View Gallery</a>
+
+  <!-- HEADER: fixed at top, contains logo, navigation, social icons -->
+  <header class="site-header">
+    <div class="container">
+      <!-- Site logo or name -->
+      <div class="logo">Chhavi Verg</div>
+      <!-- Main navigation links -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#speaking">Speaking</a></li>
+          <li><a href="#modeling">Modeling</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Social media links (replace with icons/SVGs) -->
+      <div class="social-icons">
+        <a href="https://www.tiktok.com"    aria-label="TikTok">TikTok</a>
+        <a href="https://www.instagram.com" aria-label="Instagram">IG</a>
+        <a href="https://www.youtube.com"   aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: full-screen background image with overlay text -->
+  <section id="home" class="hero" style="background-image:url('images/hero.jpg')">
+    <div class="hero-inner">
+      <!-- Main heading -->
+      <h1>Chhavi Verg</h1>
+      <!-- Subheading or tagline -->
+      <p>Model | Speaker | Content Creator</p>
+      <!-- Scroll-down arrow triggers smooth scroll -->
+      <div class="scroll-down" data-target="#about">↓</div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION: two-column layout with image + text -->
+  <section id="about" class="about">
+    <div class="container about-inner">
+      <!-- Left column: portrait image -->
+      <div class="about-image">
+        <img src="images/about.jpg" alt="Chhavi Verg portrait">
+      </div>
+      <!-- Right column: text content -->
+      <div class="about-text">
+        <h2>About Chhavi</h2>
+        <p>
+          Chhavi Verg is a New-York based model, actress, content creator,
+          speaker, trained Bharatanatyam dancer, and former Miss NJ USA…
+        </p>
+        <ul>
+          <li>Signed to <a href="https://www.wilhelmina.com/">Wilhelmina Models</a></li>
+          <li>Featured in campaigns for Emirates, Adidas, L’Oréal, Macy’s…</li>
+          <li>Keynote speaker on mental health & empowerment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT anchor -->
+  <footer id="contact">
+    <!-- Simple contact info -->
+    <div class="container">
+      <p>Get in touch: <a href="mailto:riyadp2503@gmail.com">riyadp2503@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
