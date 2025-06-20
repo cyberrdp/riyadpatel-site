@@ -1,98 +1,135 @@
 <!DOCTYPE html>
-<!-- Tell browser this is an HTML5 document -->
+<!-- Declare HTML5 document type -->
 <html lang="en">
 <head>
-  <!-- Character encoding -->
+  <!-- Character encoding for correct text rendering -->
   <meta charset="UTF-8" />
-  <!-- Responsive scaling on mobile -->
+  <!-- Viewport settings for responsive scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- The title shown in the browser tab -->
-  <title>Riyad Patel – Portfolio</title>
-  <!-- Link to external CSS file -->
+  <!-- Title shown in browser tab -->
+  <title>Riyad Patel – Model & Pageant Contestant</title>
+  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- HEADER: fixed at top with logo, nav, and social links -->
+  <!-- ===== HEADER ===== -->
   <header class="site-header">
+    <!-- Center content and limit width -->
     <div class="container">
-      <!-- Your name or logo text -->
+      <!-- Your name/logo -->
       <div class="logo">Riyad Patel</div>
-      <!-- Main navigation menu -->
+      <!-- Navigation links -->
       <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#headshots">Headshots</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- Social icons (replace text with SVGs or icon fonts as desired) -->
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero" style="background-image: url('images/hero.jpg');">
+    <!-- Dark overlay for readability -->
+    <div class="hero-overlay"></div>
+    <!-- Content centered in hero -->
+    <div class="hero-content">
+      <!-- Main heading -->
+      <h1>Riyad Patel</h1>
+      <!-- Subheading -->
+      <p class="subtitle">Model & Pageant Contestant</p>
+      <!-- Call-to-action button -->
+      <a class="btn" href="#portfolio">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ME SECTION ===== -->
+  <section id="about" class="about">
+    <!-- Limit width and center -->
+    <div class="container about-inner">
+      <!-- Left: headshot image -->
+      <div class="about-image">
+        <img src="images/about.jpg" alt="Portrait of Riyad Patel" />
+      </div>
+      <!-- Right: biography text -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m Riyad Patel, driven by my passion for modeling and pageantry.
+          As a Miss New Jersey USA contestant, I combine elegance, confidence,
+          and dedication—both on stage and behind the scenes.
+        </p>
+        <ul>
+          <li>Former 1st Runner-Up, Miss NJ USA</li>
+          <li>Signed with Top Modeling Agencies</li>
+          <li>Featured in Fashion Weeks & Editorials</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HEADSHOTS SECTION ===== -->
+  <section id="headshots" class="headshots">
+    <!-- Section title -->
+    <h2 class="section-title">Headshots</h2>
+    <!-- Grid container -->
+    <div class="container grid grid-4">
+      <!-- Individual headshot -->
+      <div class="grid-item">
+        <img src="images/headshot1.jpg" alt="Headshot 1" />
+      </div>
+      <div class="grid-item">
+        <img src="images/headshot2.jpg" alt="Headshot 2" />
+      </div>
+      <div class="grid-item">
+        <img src="images/headshot3.jpg" alt="Headshot 3" />
+      </div>
+      <div class="grid-item">
+        <img src="images/headshot4.jpg" alt="Headshot 4" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section id="portfolio" class="portfolio">
+    <!-- Section title -->
+    <h2 class="section-title">Portfolio</h2>
+    <!-- Grid for portfolio images -->
+    <div class="container grid grid-3">
+      <div class="grid-item">
+        <img src="images/portfolio1.jpg" alt="Runway Show" />
+        <p class="caption">Runway Show Look</p>
+      </div>
+      <div class="grid-item">
+        <img src="images/portfolio2.jpg" alt="Editorial Shoot" />
+        <p class="caption">Editorial Shoot</p>
+      </div>
+      <div class="grid-item">
+        <img src="images/portfolio3.jpg" alt="Pageant Crown" />
+        <p class="caption">Pageant Crown Moment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER / CONTACT ===== -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <!-- Contact email -->
+      <p>Contact me at <a href="mailto:riyadp2503@gmail.com">riyadp2503@gmail.com</a></p>
+      <!-- Social links (add your URLs) -->
       <div class="social-icons">
         <a href="#" aria-label="Instagram">IG</a>
         <a href="#" aria-label="LinkedIn">LI</a>
         <a href="#" aria-label="GitHub">GH</a>
       </div>
     </div>
-  </header>
-
-  <!-- HERO SECTION: full-screen background image with overlay text -->
-  <section id="home" class="hero" style="background-image:url('images/hero.jpg')">
-    <div class="hero-inner">
-      <!-- Main headline -->
-      <h1>Riyad Patel</h1>
-      <!-- Subheadline or short tagline -->
-      <p>Web Developer | Photographer | Content Creator</p>
-      <!-- Scroll-down arrow; data-target points at the next section -->
-      <div class="scroll-down" data-target="#about">↓</div>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION: two-column layout with image + bio text -->
-  <section id="about" class="about">
-    <div class="container about-inner">
-      <!-- Left column: headshot or portrait -->
-      <div class="about-image">
-        <img src="images/about.jpg" alt="Portrait of Riyad Patel">
-      </div>
-      <!-- Right column: descriptive text -->
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          Hello! I’m Riyad Patel, an ITI graduate specializing in web development
-          and cybersecurity. I build responsive websites, craft engaging photo
-          galleries, and explore modern web technologies.
-        </p>
-        <ul>
-          <li>Expertise: HTML, CSS, JavaScript, Python</li>
-          <li>Interests: Photography, Open-Source Projects, Design</li>
-          <li>Location: North Brunswick, NJ</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY SECTION: simple grid of images -->
-  <section id="gallery" class="gallery-grid">
-    <!-- Repeat this block for each image -->
-    <div class="gallery-item">
-      <img src="images/photo1.jpg" alt="Description of photo 1">
-    </div>
-    <div class="gallery-item">
-      <img src="images/photo2.jpg" alt="Description of photo 2">
-    </div>
-    <!-- …add more items as needed… -->
-  </section>
-
-  <!-- FOOTER / CONTACT -->
-  <footer id="contact">
-    <div class="container">
-      <!-- Mailto link for contact -->
-      <p>Contact me at <a href="mailto:riyadp2503@gmail.com">riyadp2503@gmail.com</a></p>
-    </div>
   </footer>
 
-  <!-- External JS for interactive behaviors -->
+  <!-- Link to JS for interactivity -->
   <script src="script.js"></script>
 </body>
 </html>
+
