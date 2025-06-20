@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<!-- Tell the browser this is an HTML5 document -->
+<!-- Tell browser this is an HTML5 document -->
 <html lang="en">
 <head>
-  <!-- Metadata about the document -->
+  <!-- Character encoding -->
   <meta charset="UTF-8" />
-  <!-- Make the page responsive on all devices -->
+  <!-- Responsive scaling on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Page title shown in the browser tab -->
-  <title>Chhavi Verg – Portfolio</title>
-  <!-- Link to the external stylesheet -->
+  <!-- The title shown in the browser tab -->
+  <title>Riyad Patel – Portfolio</title>
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER: fixed at top, contains logo, navigation, social icons -->
+  <!-- HEADER: fixed at top with logo, nav, and social links -->
   <header class="site-header">
     <div class="container">
-      <!-- Site logo or name -->
-      <div class="logo">Chhavi Verg</div>
-      <!-- Main navigation links -->
+      <!-- Your name or logo text -->
+      <div class="logo">Riyad Patel</div>
+      <!-- Main navigation menu -->
       <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#speaking">Speaking</a></li>
-          <li><a href="#modeling">Modeling</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- Social media links (replace with icons/SVGs) -->
+      <!-- Social icons (replace text with SVGs or icon fonts as desired) -->
       <div class="social-icons">
-        <a href="https://www.tiktok.com"    aria-label="TikTok">TikTok</a>
-        <a href="https://www.instagram.com" aria-label="Instagram">IG</a>
-        <a href="https://www.youtube.com"   aria-label="YouTube">YT</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">LI</a>
+        <a href="#" aria-label="GitHub">GH</a>
       </div>
     </div>
   </header>
@@ -40,47 +39,60 @@
   <!-- HERO SECTION: full-screen background image with overlay text -->
   <section id="home" class="hero" style="background-image:url('images/hero.jpg')">
     <div class="hero-inner">
-      <!-- Main heading -->
-      <h1>Chhavi Verg</h1>
-      <!-- Subheading or tagline -->
-      <p>Model | Speaker | Content Creator</p>
-      <!-- Scroll-down arrow triggers smooth scroll -->
+      <!-- Main headline -->
+      <h1>Riyad Patel</h1>
+      <!-- Subheadline or short tagline -->
+      <p>Web Developer | Photographer | Content Creator</p>
+      <!-- Scroll-down arrow; data-target points at the next section -->
       <div class="scroll-down" data-target="#about">↓</div>
     </div>
   </section>
 
-  <!-- ABOUT SECTION: two-column layout with image + text -->
+  <!-- ABOUT SECTION: two-column layout with image + bio text -->
   <section id="about" class="about">
     <div class="container about-inner">
-      <!-- Left column: portrait image -->
+      <!-- Left column: headshot or portrait -->
       <div class="about-image">
-        <img src="images/about.jpg" alt="Chhavi Verg portrait">
+        <img src="images/about.jpg" alt="Portrait of Riyad Patel">
       </div>
-      <!-- Right column: text content -->
+      <!-- Right column: descriptive text -->
       <div class="about-text">
-        <h2>About Chhavi</h2>
+        <h2>About Me</h2>
         <p>
-          Chhavi Verg is a New-York based model, actress, content creator,
-          speaker, trained Bharatanatyam dancer, and former Miss NJ USA…
+          Hello! I’m Riyad Patel, an ITI graduate specializing in web development
+          and cybersecurity. I build responsive websites, craft engaging photo
+          galleries, and explore modern web technologies.
         </p>
         <ul>
-          <li>Signed to <a href="https://www.wilhelmina.com/">Wilhelmina Models</a></li>
-          <li>Featured in campaigns for Emirates, Adidas, L’Oréal, Macy’s…</li>
-          <li>Keynote speaker on mental health & empowerment</li>
+          <li>Expertise: HTML, CSS, JavaScript, Python</li>
+          <li>Interests: Photography, Open-Source Projects, Design</li>
+          <li>Location: North Brunswick, NJ</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER / CONTACT anchor -->
+  <!-- GALLERY SECTION: simple grid of images -->
+  <section id="gallery" class="gallery-grid">
+    <!-- Repeat this block for each image -->
+    <div class="gallery-item">
+      <img src="images/photo1.jpg" alt="Description of photo 1">
+    </div>
+    <div class="gallery-item">
+      <img src="images/photo2.jpg" alt="Description of photo 2">
+    </div>
+    <!-- …add more items as needed… -->
+  </section>
+
+  <!-- FOOTER / CONTACT -->
   <footer id="contact">
-    <!-- Simple contact info -->
     <div class="container">
-      <p>Get in touch: <a href="mailto:riyadp2503@gmail.com">riyadp2503@gmail.com</a></p>
+      <!-- Mailto link for contact -->
+      <p>Contact me at <a href="mailto:riyadp2503@gmail.com">riyadp2503@gmail.com</a></p>
     </div>
   </footer>
 
-  <!-- Link to the external JavaScript file -->
+  <!-- External JS for interactive behaviors -->
   <script src="script.js"></script>
 </body>
 </html>

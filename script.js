@@ -1,12 +1,12 @@
-// Select all elements with the .scroll-down class
+// Smooth scroll behavior for any element with .scroll-down
 document.querySelectorAll('.scroll-down').forEach(el => {
-  // Listen for click on the arrow
   el.addEventListener('click', () => {
-    // Get the target section selector from the data attribute
-    const target = document.querySelector(el.dataset.target);
-    if (target) {
-      // Smoothly scroll the page to that section
-      target.scrollIntoView({ behavior: 'smooth' });
+    // Get selector of the target section from data attribute
+    const targetSelector = el.dataset.target;
+    const targetEl = document.querySelector(targetSelector);
+    if (targetEl) {
+      // Scroll smoothly to that section
+      targetEl.scrollIntoView({ behavior: 'smooth' });
     }
   });
 });
