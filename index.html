@@ -1,121 +1,79 @@
 <!DOCTYPE html>
-<!-- Declare HTML5 document type -->
 <html lang="en">
 <head>
-  <!-- Character encoding -->
-  <meta charset="UTF-8" />
-  <!-- Responsive viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Browser tab title -->
-  <title>Riya Patel – Model & Pageant Contestant</title>
-  <!-- Link to main CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riya Patel</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
-  <header class="site-header anim-item">
-    <div class="container">
-      <!-- Logo / name -->
+  <header>
+    <nav class="navbar">
       <div class="logo">Riya Patel</div>
-      <!-- Main navigation -->
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#headshots">Headshots</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">☰</div>
+    </nav>
+    <div class="hero">
+      <h1>Welcome to My World</h1>
+      <p>Model | Cybersecurity Enthusiast | Pageant Competitor</p>
+      <a href="#portfolio" class="btn">See My Work</a>
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section id="home" class="hero anim-item"
-           style="background-image:url('images/hero.jpg');">
-    <!-- semi-transparent overlay for text contrast -->
-    <div class="hero-overlay"></div>
-    <!-- hero text & button -->
-    <div class="hero-content">
-      <h1>Riya Patel</h1>
-      <p class="subtitle">Model & Pageant Contestant</p>
-      <a class="btn" href="#portfolio">View Portfolio</a>
-    </div>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hi, I'm Riya—a passionate model and cybersecurity professional. I aim to inspire confidence and leadership through my work both on stage and behind the screen.</p>
   </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="about anim-item">
-    <div class="container about-inner">
-      <div class="about-image">
-        <!-- add 'img-tilt' for hover tilt+zoom -->
-        <img class="img-tilt" src="images/about.jpg"
-             alt="Portrait of Riya Patel" />
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project One</h3>
       </div>
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>……</p>
-        <ul>
-          <li>F</li>
-          <li>S</li>
-          <li>F</li>
-        </ul>
+      <div class="card">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Two</h3>
+      </div>
+      <div class="card">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Project Three</h3>
       </div>
     </div>
   </section>
 
-  <!-- ===== HEADSHOTS ===== -->
-  <section id="headshots" class="headshots anim-item">
-    <h2 class="section-title">Headshots</h2>
-    <div class="container grid grid-4">
-      <!-- each 'grid-item' will fade/slide in on scroll -->
-      <div class="grid-item img-tilt">
-        <img src="images/headshot1.jpg" alt="Headshot 1" />
-      </div>
-      <div class="grid-item img-tilt">
-        <img src="images/headshot2.jpg" alt="Headshot 2" />
-      </div>
-      <div class="grid-item img-tilt">
-        <img src="images/headshot3.jpg" alt="Headshot 3" />
-      </div>
-      <div class="grid-item img-tilt">
-        <img src="images/headshot4.jpg" alt="Headshot 4" />
-      </div>
-    </div>
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
   </section>
 
-  <!-- ===== PORTFOLIO ===== -->
-  <section id="portfolio" class="portfolio anim-item">
-    <h2 class="section-title">Portfolio</h2>
-    <div class="container grid grid-3">
-      <div class="grid-item img-tilt">
-        <img src="images/portfolio1.jpg" alt="Runway Show" />
-        <p class="caption">R</p>
-      </div>
-      <div class="grid-item img-tilt">
-        <img src="images/portfolio2.jpg" alt="Editorial Shoot" />
-        <p class="caption">Editorial Shoot</p>
-      </div>
-      <div class="grid-item img-tilt">
-        <img src="images/portfolio3.jpg" alt="Pageant Crown" />
-        <p class="caption">P</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER / CONTACT ===== -->
-  <footer id="contact" class="footer anim-item">
-    <div class="container">
-      <!-- placeholder contact info -->
-      <p>Contact me at <a href="mailto:contact">contact</a></p>
-      <div class="social-icons">
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="LinkedIn">LI</a>
-        <a href="#" aria-label="GitHub">GH</a>
-      </div>
+  <footer>
+    <p>&copy; 2025 Riya Patel. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
     </div>
   </footer>
 
-  <!-- Link to main JavaScript -->
-  <script src="script.js"></script>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
+
