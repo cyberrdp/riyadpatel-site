@@ -2,23 +2,22 @@
 <!-- Declare HTML5 document type -->
 <html lang="en">
 <head>
-  <!-- Character encoding for correct text rendering -->
+  <!-- Character encoding -->
   <meta charset="UTF-8" />
-  <!-- Viewport settings for responsive scaling -->
+  <!-- Responsive viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Title shown in browser tab -->
+  <!-- Browser tab title -->
   <title>Riya Patel – Model & Pageant Contestant</title>
-  <!-- Link to the external stylesheet -->
+  <!-- Link to main CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- ===== HEADER ===== -->
-  <header class="site-header">
-    <!-- Center content and limit width -->
+  <header class="site-header anim-item">
     <div class="container">
-      <!-- Your name/logo -->
-      <div class="logo">Riyad Patel</div>
-      <!-- Navigation links -->
+      <!-- Logo / name -->
+      <div class="logo">Riya Patel</div>
+      <!-- Main navigation -->
       <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
@@ -31,37 +30,30 @@
     </div>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section id="home" class="hero" style="background-image: url('images/hero.jpg');">
-    <!-- Dark overlay for readability -->
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero anim-item"
+           style="background-image:url('images/hero.jpg');">
+    <!-- semi-transparent overlay for text contrast -->
     <div class="hero-overlay"></div>
-    <!-- Content centered in hero -->
+    <!-- hero text & button -->
     <div class="hero-content">
-      <!-- Main heading -->
       <h1>Riya Patel</h1>
-      <!-- Subheading -->
       <p class="subtitle">Model & Pageant Contestant</p>
-      <!-- Call-to-action button -->
       <a class="btn" href="#portfolio">View Portfolio</a>
     </div>
   </section>
 
-  <!-- ===== ABOUT ME SECTION ===== -->
-  <section id="about" class="about">
-    <!-- Limit width and center -->
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about anim-item">
     <div class="container about-inner">
-      <!-- Left: headshot image -->
       <div class="about-image">
-        <img src="images/about.jpg" alt="Portrait of Riyad Patel" />
+        <!-- add 'img-tilt' for hover tilt+zoom -->
+        <img class="img-tilt" src="images/about.jpg"
+             alt="Portrait of Riya Patel" />
       </div>
-      <!-- Right: biography text -->
       <div class="about-text">
         <h2>About Me</h2>
-        <p>
-          I’m Riya Patel, driven by my passion for modeling and pageantry.
-          As a Miss New Jersey USA contestant, I combine elegance, confidence,
-          and dedication—both on stage and behind the scenes.
-        </p>
+        <p>……</p>
         <ul>
           <li>F</li>
           <li>S</li>
@@ -71,43 +63,39 @@
     </div>
   </section>
 
-  <!-- ===== HEADSHOTS SECTION ===== -->
-  <section id="headshots" class="headshots">
-    <!-- Section title -->
+  <!-- ===== HEADSHOTS ===== -->
+  <section id="headshots" class="headshots anim-item">
     <h2 class="section-title">Headshots</h2>
-    <!-- Grid container -->
     <div class="container grid grid-4">
-      <!-- Individual headshot -->
-      <div class="grid-item">
+      <!-- each 'grid-item' will fade/slide in on scroll -->
+      <div class="grid-item img-tilt">
         <img src="images/headshot1.jpg" alt="Headshot 1" />
       </div>
-      <div class="grid-item">
+      <div class="grid-item img-tilt">
         <img src="images/headshot2.jpg" alt="Headshot 2" />
       </div>
-      <div class="grid-item">
+      <div class="grid-item img-tilt">
         <img src="images/headshot3.jpg" alt="Headshot 3" />
       </div>
-      <div class="grid-item">
+      <div class="grid-item img-tilt">
         <img src="images/headshot4.jpg" alt="Headshot 4" />
       </div>
     </div>
   </section>
 
-  <!-- ===== PORTFOLIO SECTION ===== -->
-  <section id="portfolio" class="portfolio">
-    <!-- Section title -->
-    <h2 class="section-title">P</h2>
-    <!-- Grid for portfolio images -->
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio" class="portfolio anim-item">
+    <h2 class="section-title">Portfolio</h2>
     <div class="container grid grid-3">
-      <div class="grid-item">
+      <div class="grid-item img-tilt">
         <img src="images/portfolio1.jpg" alt="Runway Show" />
         <p class="caption">R</p>
       </div>
-      <div class="grid-item">
+      <div class="grid-item img-tilt">
         <img src="images/portfolio2.jpg" alt="Editorial Shoot" />
         <p class="caption">Editorial Shoot</p>
       </div>
-      <div class="grid-item">
+      <div class="grid-item img-tilt">
         <img src="images/portfolio3.jpg" alt="Pageant Crown" />
         <p class="caption">P</p>
       </div>
@@ -115,11 +103,10 @@
   </section>
 
   <!-- ===== FOOTER / CONTACT ===== -->
-  <footer id="contact" class="footer">
+  <footer id="contact" class="footer anim-item">
     <div class="container">
-      <!-- Contact email -->
-      <p>Contact me at <a href="mailto:@gmail.com">@gmail.com</a></p>
-      <!-- Social links (add your URLs) -->
+      <!-- placeholder contact info -->
+      <p>Contact me at <a href="mailto:contact">contact</a></p>
       <div class="social-icons">
         <a href="#" aria-label="Instagram">IG</a>
         <a href="#" aria-label="LinkedIn">LI</a>
@@ -128,8 +115,7 @@
     </div>
   </footer>
 
-  <!-- Link to JS for interactivity -->
+  <!-- Link to main JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
-
